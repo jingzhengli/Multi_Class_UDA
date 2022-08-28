@@ -1,0 +1,28 @@
+
+DATASET:
+  NUM_CLASSES: 12
+  DATASET: 'VisDA'
+  DATAROOT: '' # your own data path
+  SOURCE_NAME: 'train'
+  TARGET_NAME: 'validation'
+  VAL_NAME: 'validation'
+
+MODEL:
+  FEATURE_EXTRACTOR: 'resnet101'
+
+DATA_TRANSFORM:
+  TYPE: 'center'
+#
+TRAIN:
+  BASE_LR: 0.01
+  MAX_EPOCH: 30
+  SOURCE_BATCH_SIZE: 32
+  TARGET_BATCH_SIZE: 32
+
+
+EVAL_METRIC: "accu_mean"
+NUM_WORKERS: 2
+STRENGTHEN:
+  DATALOAD: 'normal'
+  PERCATE: 3
+  CLUSTER_FREQ: 2

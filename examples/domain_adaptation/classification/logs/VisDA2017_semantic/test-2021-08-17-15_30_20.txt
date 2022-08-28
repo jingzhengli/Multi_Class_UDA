@@ -1,0 +1,30 @@
+Namespace(arch='resnet101', batch_size=32, bottleneck_dim=1024, cfg_file='../../../experiments/configs/VisDA/visda17_train_train2val_cfg_res101.yaml', epochs=30, iters_per_epoch=1000, log='logs/mdd_ssl/VisDA2017_bestmodel', lr=0.004, lr_decay=0.75, lr_gamma=0.0002, margin=4.0, module='semantic', momentum=0.9, per_class_eval=True, phase='test', print_freq=100, seed=1, trade_off=1.0, wd=0.0005, workers=2)
+mdd_ssl.py:51: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using pre-trained model 'resnet101'
+Test: [  0/433]	Time  2.305 ( 2.305)	Loss 4.4903e-01 (4.4903e-01)	Acc@1  92.97 ( 92.97)	Acc@5  97.66 ( 97.66)
+Test: [100/433]	Time  0.368 ( 0.398)	Loss 7.0927e-01 (4.5472e-01)	Acc@1  83.59 ( 90.22)	Acc@5 100.00 ( 98.86)
+Test: [200/433]	Time  0.491 ( 0.361)	Loss 2.2007e-01 (4.6705e-01)	Acc@1  97.66 ( 90.13)	Acc@5  98.44 ( 99.20)
+Test: [300/433]	Time  0.336 ( 0.358)	Loss 1.1182e+00 (4.8252e-01)	Acc@1  82.03 ( 90.46)	Acc@5  96.09 ( 99.13)
+Test: [400/433]	Time  0.396 ( 0.358)	Loss 3.7077e+00 (5.4631e-01)	Acc@1  37.50 ( 89.49)	Acc@5  98.44 ( 99.13)
+ * Acc@1 87.033 Acc@5 99.038
+global correct: 87.0
+mean correct:88.4
+mean IoU: 79.1
++------------+-------------------+-------------------+
+|   class    |        acc        |        iou        |
++------------+-------------------+-------------------+
+| aeroplane  | 97.77838897705078 | 94.31216430664062 |
+|  bicycle   |  87.8848876953125 | 80.26280975341797 |
+|    bus     | 86.63113403320312 | 72.23111724853516 |
+|    car     | 87.44351196289062 | 72.15962982177734 |
+|   horse    | 97.54850006103516 | 90.90187072753906 |
+|   knife    | 96.43373107910156 | 76.05473327636719 |
+| motorcycle |  93.4437484741211 | 83.82603454589844 |
+|   person   | 82.17499542236328 | 74.43387603759766 |
+|   plant    | 96.76852416992188 | 92.51786804199219 |
+| skateboard | 95.87899780273438 |  85.9332046508789 |
+|   train    | 89.35316467285156 | 82.08631134033203 |
+|   truck    | 50.01802444458008 |  44.0476188659668 |
++------------+-------------------+-------------------+
+87.03329240550046
