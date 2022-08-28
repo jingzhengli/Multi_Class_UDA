@@ -56,4 +56,4 @@ python our_method.py -a resnet101 --epochs 30 --bottleneck-dim 1024 --seed 0 --m
 
 [MIT](LICENSE)
 
-The code is heavily borrowed from the repository (https://github.com/thuml/Transfer-Learning-Library).
+The code is borrowed from the repository (https://github.com/thuml/Transfer-Learning-Library).
