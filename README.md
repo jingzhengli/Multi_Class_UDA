@@ -51,3 +51,9 @@ For example, for the VisDA-2017 dataset,:
 ```
 python our_method.py -a resnet101 --epochs 30 --bottleneck-dim 1024 --seed 0 --module semantic --cfg ../../../experiments/configs/VisDA/visda17_train_train2val_cfg_res101.yaml --per-class-eval --log logs/our_method/VisDA2017_semantic --phase test
 ```
+
+## License
+
+[MIT](LICENSE)
+
+The code is heavily borrowed from the repository (https://github.com/thuml/Transfer-Learning-Library).
