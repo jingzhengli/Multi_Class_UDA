@@ -1,7 +1,7 @@
 # Target Structure Learning for Unsupervised Multi-Class Domain Adaptation
 Update: 
 
-2021-9: This is the Pytorch implementation for our submission [Target Structure Learning for Unsupervised Multi-Class Domain Adaptation].
+2022-9: This is the Pytorch implementation for our submission [Target Structure Learning for Unsupervised Multi-Class Domain Adaptation].
 
 ## Dataset
 The structure of the dataset should be like
