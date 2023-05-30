@@ -1,0 +1,25 @@
+DATASET:
+  NUM_CLASSES: 65
+  DATASET: 'OfficeHome'
+  DATAROOT: '' # your own data path
+  SOURCE_NAME: 'Real_World'
+  TARGET_NAME: 'Product'
+  VAL_NAME: 'Product'
+
+MODEL:
+  FEATURE_EXTRACTOR: 'resnet50'
+
+DATA_TRANSFORM:
+  TYPE: 'randomsizedcrop'
+
+STRENGTHEN:
+  PERCATE: 2
+  CLUSTER_FREQ: 2
+
+TRAIN:
+  MAX_EPOCH: 100
+# More training epoch is ok, but not necessary.
+
+EVAL_METRIC: "accu"
+
+NUM_WORKERS: 2
