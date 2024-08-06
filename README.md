@@ -1,7 +1,7 @@
 # Target Structure Learning Framework for Unsupervised Multi-Class Domain Adaptation
 Update: 
 
-This is the Pytorch implementation for our submission [Target Structure Learning Framework for Unsupervised Multi-Class Domain Adaptation].
+This is the Pytorch implementation of [Target Structure Learning Framework for Unsupervised Multi-Class Domain Adaptation] publish in TOMM.
 
 ## Dataset
 The structure of the dataset should be like
